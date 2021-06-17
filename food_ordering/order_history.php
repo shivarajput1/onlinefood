@@ -46,7 +46,7 @@ $res=mysqli_query($con,$sql);
 												<div class="div_order_id"><a href="<?php echo FRONT_SITE_PATH.'order_detail?id='.$row['id']?>"><?php echo $row['id']?></div></a>
 											
 											<br/>
-											<a href="<?php echo FRONT_SITE_PATH?>download_invoice?id=<?php echo $row['id']?>"><img src='<?php echo FRONT_SITE_PATH?>assets/img/icon-img/pdf.png' width="20px" title="Download Invoice"/></a>
+											
 											</td>
                                             <td style="font-size:14px;">
 											<?php echo $row['total_price']?></td>

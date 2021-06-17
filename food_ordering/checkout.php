@@ -77,19 +77,7 @@ if(isset($_POST['place_order'])){
 			redirect(FRONT_SITE_PATH.'success');
 		}
 		
-		if($payment_type=='paytm'){
-			$paytm_oid=$insert_id.'_'.$_SESSION['FOOD_USER_ID'];
-			$html='<form method="post" action="pgRedirect.php" name="frmPayment" style="display:none;">
-					<input id="ORDER_ID" tabindex="1" maxlength="20" size="20"
-								name="ORDER_ID" autocomplete="off"
-								value="'.$paytm_oid.'">
-							<input id="CUST_ID" tabindex="2" maxlength="12" size="12" name="CUST_ID" autocomplete="off" value="'.$_SESSION['FOOD_USER_ID'].'"><input id="INDUSTRY_TYPE_ID" tabindex="4" maxlength="12" size="12" name="INDUSTRY_TYPE_ID" autocomplete="off" value="Retail"><input id="CHANNEL_ID" tabindex="4" maxlength="12" size="12" name="CHANNEL_ID" autocomplete="off" value="WEB"><input title="TXN_AMOUNT" tabindex="10"
-								type="text" name="TXN_AMOUNT"
-								value="'.$final_price.'"><input value="CheckOut" type="submit"	onclick=""></td></form><script type="text/javascript">document.frmPayment.submit();
-				
-			</script>';
-			echo $html;
-		}
+	
 	}
 	
 }
@@ -199,10 +187,7 @@ if(isset($_POST['place_order'])){
 															<input type="radio" name="payment_type" value="cod">
 															<label>Cash on Delivery(COD)</label>
 														</div>
-														<div class="single-ship">
-															<input type="radio" name="payment_type" value="paytm"   checked="checked">
-															<label>PayTm</label>
-														</div>
+														
 														<?php
 														$is_dis='';
 														$low_msg='';

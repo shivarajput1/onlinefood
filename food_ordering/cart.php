@@ -23,7 +23,7 @@ if($website_close==1){
                                             <th>Image</th>
                                             <th>Product Name</th>
                                             <th>Until Price</th>
-                                            <th>Qty</th>
+                                            <!-- <th>Qty</th> -->
                                             <th>Subtotal</th>
                                             <th>action</th>
                                         </tr>
@@ -38,11 +38,11 @@ if($website_close==1){
 												</td>
 												<td class="product-name"><a href="#"><?php echo $list['dish']?> </a></td>
 												<td class="product-price-cart"><span class="amount"><?php echo $list['price']?> Rs</span></td>
-												<td class="product-quantity">
+												<!-- <td class="product-quantity">
 													<div class="cart-plus-minus">
 														<input class="cart-plus-minus-box" type="text" name="qty[<?php echo $key?>][]" value="<?php echo $list['qty']?>">
 													</div>
-												</td>
+												</td> -->
 												<td class="product-subtotal"><?php echo $list['qty']*$list['price']?> Rs</td>
 												<td class="product-remove">
 													<a href="javascript:void(0)" onclick="delete_cart('<?php echo $key?>','load')"><i class="fa fa-times"></i></a>
