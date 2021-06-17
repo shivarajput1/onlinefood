@@ -68,6 +68,8 @@ function rand_str(){
 }
 
 
+
+// getting user cart values from database dist_cart
 function getUserCart(){
 	global $con;
 	$arr=array();
@@ -79,6 +81,9 @@ function getUserCart(){
 	return $arr;
 }
 
+
+
+// managing user cart like updateing cart values
 function manageUserCart($uid,$qty,$attr){
 	global $con;
 	$res=mysqli_query($con,"select * from dish_cart where user_id='$uid' and dish_detail_id='$attr'");
@@ -94,6 +99,8 @@ function manageUserCart($uid,$qty,$attr){
 	
 }
 
+
+// getting dist 
 function getDishCartStatus(){
 	global $con;
 	$cartArr=array();
@@ -168,13 +175,15 @@ function getUserFullCart($attr_id=''){
 	}
 }
 
-
+// getting dish details by id
 function getDishDetailById($id){
 	global $con;
 	$res=mysqli_query($con,"select dish.dish,dish.image,dish_details.price from dish_details,dish where dish_details.id='$id' and dish.id=dish_details.dish_id");
 	$row=mysqli_fetch_assoc($res);
 	return $row;
 }
+
+// remove dish details from cart
 
 function removeDishFromCartByid($id){
 	
@@ -187,6 +196,7 @@ function removeDishFromCartByid($id){
 }
 
 
+// getting user details from database
 function getUserDetailsByid($uid=''){
 	global $con;
 	$data['name']='';
@@ -204,6 +214,8 @@ function getUserDetailsByid($uid=''){
 	return $data;
 }
 
+
+// check if cart is empty
 function emptyCart(){
 	if(isset($_SESSION['FOOD_USER_ID'])){
 		global $con;
@@ -213,6 +225,7 @@ function emptyCart(){
 	}
 }
 
+// getting order details from order_detail table
 function getOrderDetails($oid){
 	global $con;
 	$sql="select order_detail.price,order_detail.qty,dish_details.attribute,dish.dish,order_detail.dish_details_id
@@ -229,6 +242,8 @@ function getOrderDetails($oid){
 	return $data;	
 }
 
+
+// getting order details from order_master table
 function getOrderById($oid){
 	global $con;
 	$sql="select * from order_master where id='$oid'";
