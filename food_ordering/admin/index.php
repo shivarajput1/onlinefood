@@ -1,6 +1,6 @@
 <?php include('top.php');?>
 
-<div class="row">
+<!---  <div class="row">
 	<div class="col-md-6 col-lg-3 grid-margin stretch-card">
 	  <div class="card">
 		<div class="card-body">
@@ -130,7 +130,7 @@
 		</div>
 	  </div>
 	</div>
-  </div>
+  </div> --->
   <?php
   $sql="select order_master.*,order_status.order_status as order_status_str from order_master,order_status where order_master.order_status=order_status.id order by order_master.id desc limit 5";
 $res=mysqli_query($con,$sql);

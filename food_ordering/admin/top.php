@@ -43,15 +43,17 @@ if($cur_path=='' || $cur_path=='index.php'){
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title><?php echo $page_title?></title>
-  <!-- plugins:css -->
+
   <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/css/vendor.bundle.base.css">
   <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.css">
-  <!-- endinject -->
+ 
   <!-- Plugin css for this page -->
   <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <!-- End plugin css for this page -->
-  <!-- inject:css -->
+
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="sidebar-light">
@@ -103,65 +105,85 @@ if($cur_path=='' || $cur_path=='index.php'){
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="index.php">
-              <i class="mdi mdi-view-quilt menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
+            <span class="material-icons">
+space_dashboard
+</span>
+              <span class="menu-title ml-3">Dashboard</span>
             </a>
           </li>
 		  <li class="nav-item">
             <a class="nav-link" href="order.php">
-              <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Order</span>
+            <span class="material-icons">
+pending_actions
+</span>
+              <span class="menu-title ml-3">Order</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="category.php">
-              <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Category</span>
+            <span class="material-icons">
+category
+</span>
+              <span class="menu-title ml-3">Category</span>
             </a>
           </li>
 		  <li class="nav-item">
             <a class="nav-link" href="user.php">
-              <i class="mdi mdi-view-headline menu-icon "></i>
-              <span class="menu-title">Users</span>
+            <span class="material-icons">
+people
+</span>
+              <span class="menu-title ml-3">Users</span>
             </a>
           </li>
 		  <li class="nav-item">
             <a class="nav-link" href="delivery_boy.php">
-              <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Delivery Boy</span>
+            <span class="material-icons">
+delivery_dining
+</span>
+              <span class="menu-title ml-3">Delivery Boy</span>
             </a>
           </li>
 		   <li class="nav-item">
             <a class="nav-link" href="coupon_code.php">
-              <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Coupon Code</span>
+            <span class="material-icons">
+local_offer
+</span>
+              <span class="menu-title ml-3">Coupon Code</span>
             </a>
           </li>
 		  
 		  <li class="nav-item">
             <a class="nav-link" href="dish.php">
-              <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Dish</span>
+            <span class="material-icons">
+restaurant_menu
+</span>
+              <span class="menu-title ml-3">Dish</span>
             </a>
           </li>
 		  
 		  <li class="nav-item">
             <a class="nav-link" href="banner.php">
-              <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Banner</span>
+            <span class="material-icons">
+vrpano
+</span>
+              <span class="menu-title ml-3">Banner</span>
             </a>
           </li>
 		  
 		  <li class="nav-item">
             <a class="nav-link" href="contact_us.php">
-              <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Contact Us</span>
+            <span class="material-icons">
+contact_mail
+</span>
+              <span class="menu-title ml-3">Contact Us</span>
             </a>
           </li>
 		  <li class="nav-item">
             <a class="nav-link" href="setting.php">
-              <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Setting</span>
+            <span class="material-icons">
+settings
+</span>
+              <span class="menu-title ml-3">Setting</span>
             </a>
           </li>
 		  

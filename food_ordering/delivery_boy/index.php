@@ -10,7 +10,7 @@ if(!isset($_SESSION['DELIVERY_BOY_USER_LOGIN'])){
 if(isset($_GET['set_order_id'])){
 	$set_order_id=get_safe_value($_GET['set_order_id']);
 	$delivered_on=date('Y-m-d h:i:s');
-	mysqli_query($con,"update order_master set order_status=4,delivered_on='$delivered_on' where id='$set_order_id' and delivery_boy_id='".$_SESSION['DELIVERY_BOY_ID']."'");
+	mysqli_query($con,"update order_master set order_status=4,delivered_on='$delivered_on',payment_status='success' where id='$set_order_id' and delivery_boy_id='".$_SESSION['DELIVERY_BOY_ID']."'");
 	
 }
 
@@ -75,6 +75,7 @@ $res=mysqli_query($con,$sql);
 									   <?php if(mysqli_num_rows($res)>0){
 										$i=1;
 										while($row=mysqli_fetch_assoc($res)){
+                                 if($row["order_status"]!=5){
 										?>	
                                        <tr>
                                           <td>
@@ -108,7 +109,7 @@ $res=mysqli_query($con,$sql);
                                        </tr>
                                        <?php 
 										$i++;
-										} } else { ?>
+										} }} else { ?>
 										<tr>
 											<td colspan="6">No data found</td>
 										</tr>

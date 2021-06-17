@@ -4,10 +4,10 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-7">
                             <div class="copyright">
-                                <p>Copyright © <a href="#">Billy.</a> . All Right Reserved.</p>
+                                <p>Copyright © 2021 . All Right Reserved.</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-5">
+                       <!--- <div class="col-lg-6 col-md-6 col-sm-5">
                             <div class="footer-social">
                                 <ul>
                                     <li><a href="#"><i class="ion-social-facebook"></i></a></li>
@@ -19,7 +19,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> --->
                 </div>
             </div>
         </div>
