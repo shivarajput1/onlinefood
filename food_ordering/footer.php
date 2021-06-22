@@ -26,10 +26,13 @@
         
 		<!-- all js here -->
         <script src="<?php echo FRONT_SITE_PATH?>assets/js/vendor/jquery-1.12.0.min.js"></script>
+
+        <!-- it is uded in according menus -->
         <script src="<?php echo FRONT_SITE_PATH?>assets/js/popper.js"></script>
         <script src="<?php echo FRONT_SITE_PATH?>assets/js/bootstrap.min.js"></script>
-        <script src="<?php echo FRONT_SITE_PATH?>assets/js/imagesloaded.pkgd.min.js"></script>
-        <script src="<?php echo FRONT_SITE_PATH?>assets/js/isotope.pkgd.min.js"></script>
+        
+
+        <!-- uesd in contact us file -->
         <script src="<?php echo FRONT_SITE_PATH?>assets/js/ajax-mail.js"></script>
         <script src="<?php echo FRONT_SITE_PATH?>assets/js/owl.carousel.min.js"></script>
         <script src="<?php echo FRONT_SITE_PATH?>assets/js/plugins.js"></script>

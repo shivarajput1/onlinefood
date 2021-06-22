@@ -56,7 +56,7 @@ if($website_close==1){
                                             <a href="<?php echo FRONT_SITE_PATH?>shop">Continue Shopping</a>
                                         </div>
                                         <div class="cart-clear">
-                                            <button name="update_cart">Update Shopping Cart</button>
+                                            
                                             <a href="<?php echo FRONT_SITE_PATH?>checkout">Checkout</a>
                                         </div>
                                     </div>
