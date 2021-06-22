@@ -78,7 +78,7 @@ if(isset($_SESSION['FOOD_USER_ID'])){
 								if(isset($_SESSION['FOOD_USER_NAME'])){
 								?>
 							<div id="wallet_top_box">
-								<a href="<?php echo FRONT_SITE_PATH?>wallet" style="color:#fff;">
+								<a href="#" style="color:#fff;">
 									Wallet Amt:- <?php echo $getWalletAmt?>
 								</a>
 								
