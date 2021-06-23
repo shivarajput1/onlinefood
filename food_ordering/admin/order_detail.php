@@ -116,9 +116,9 @@ if(isset($_GET['id']) && $_GET['id']>0){
                     </div>
 					
 					
-                    <div class="container-fluid w-100">
+                    <!-- <div class="container-fluid w-100">
                       <a href="../download_invoice.php?id=<?php echo $id?>" class="btn btn-primary float-right mt-4 ml-2"><i class="mdi mdi-printer mr-1"></i>PDF</a>
-                    </div>
+                    </div> -->
 					<?php
 					$orderStatusRes=mysqli_query($con,"select * from order_status order by order_status");
 					
